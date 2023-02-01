@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="FinalExam.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FinalExam"
+    xmlns:views="clr-namespace:FinalExam"
+    Shell.FlyoutBehavior="Disabled"
+    NavigationPage.HasNavigationBar="False">
+
+
+    <!--<shellcontent
+        title="home"
+        contenttemplate="{datatemplate local:mainpage}"
+        route="mainpage" />-->
+
+
+
+    <TabBar>
+        <Tab Title="testing1"
+             x:Name="testing1">
+            <ShellContent             
+            ContentTemplate="{DataTemplate views:Testing1}" />
+        </Tab>
+        <Tab Title="Home"
+             x:Name="home">
+            <ShellContent             
+            ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="listview"
+             x:Name="listview">
+            <ShellContent 
+            ContentTemplate="{DataTemplate views:listview}" />
+        </Tab>
+    </TabBar>
+
+
+
+
+</Shell>

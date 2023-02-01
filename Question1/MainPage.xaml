@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Question1.MainPage">
+
+
+        
+    <StackLayout>
+        
+        
+        
+        <Grid VerticalOptions="CenterAndExpand" RowDefinitions="*" Margin="20">
+                <Label x:Name="label1"  Text="Font Size: (uninitialized) " Grid.Row="0"  HorizontalOptions="CenterAndExpand"/>
+            <Slider x:Name="slider1" Grid.Row="1"  HorizontalOptions="FillAndExpand" Minimum="16" Maximum="32" ValueChanged="OnSliderValueChanged" MinimumTrackColor="Blue" MaximumTrackColor="Red"/>
+            <Label x:Name="label2" Margin="0,100,0,0" Text="Sample text" Grid.Row="2" HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+
+        </StackLayout>
+
+
+
+
+
+
+
+</ContentPage>

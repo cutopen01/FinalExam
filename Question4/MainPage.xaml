@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Question4.MainPage">
+
+
+    <StackLayout>
+
+
+        
+        
+        <ListView x:Name="listContacts"
+              BackgroundColor="Transparent"
+              SeparatorColor="Blue"
+              SeparatorVisibility="Default"
+              RowHeight="50">
+
+            
+        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell ImageSource="{Binding Image}"
+                           Text="{Binding Name}"
+                          Detail="{Binding Description}"></ImageCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+    </StackLayout>
+
+
+</ContentPage>
